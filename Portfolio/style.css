@@ -418,3 +418,93 @@ h2 {
 .contato-icones a:hover {
     text-decoration: underline;
 }
+
+
+  @media (max-width: 1024px) {
+      .container-principal,
+      .container-sobre {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .foto-com-moldura,
+      .foto-sobre {
+        width: 250px;
+        height: 250px;
+        margin: 20px 0;
+        order: -1;
+      }
+
+      .texto-principal,
+      .texto-sobre {
+        width: 90%;
+        padding: 0;
+        text-align: center;
+        order: 1;
+      }
+
+      .container-principal {
+        flex-direction: column-reverse;
+      }
+
+      .container-skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto 60px;
+        width: 100%;
+        max-width: 1000px;
+        box-sizing: border-box;
+      }
+
+      .container-projetos {
+        margin-left: 0;
+      }
+
+      .projeto-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .projeto-item img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+      }
+
+      .descricao-projeto {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      #main-header {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .logo {
+        position: static;
+      }
+
+      .social-icons {
+        position: static;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container-skills {
+        grid-template-columns: 1fr;
+      }
+
+      .container-skills .skill-item {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      #navbar ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
