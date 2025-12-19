@@ -4,22 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio - Carlos Felipe</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
+
   <header id="main-header">
     <h1 class="logo">carlosFelipe();</h1>
+
     <nav id="navbar">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="sobre.html">Sobre mim</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li>
+          <a href="index.html" class="active nav-home">Home</a>
+        </li>
+        <li>
+          <a href="sobre.html" class="nav-sobre">Sobre mim</a>
+        </li>
+        <li>
+          <a href="projetos.html" class="nav-projetos">Projetos</a>
+        </li>
+        <li>
+          <a href="contato.html" class="nav-contato">Contato</a>
+        </li>
       </ul>
     </nav>
+
     <div class="social-icons">
       <a href="https://github.com/CarlosFelipeS7" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
@@ -33,14 +44,44 @@
   <main class="container-principal">
     <div class="texto-principal">
       <p>Hello World, I'm</p>
-      <h2 id="typing-title"> </h2>
+      <h2 id="typing-title"></h2>
       <p id="typing-paragraph"></p>
-      <p id="welcome">Seja bem-vindo ao meu portfólio 🦅</p>
-
-
+      <p id="welcome">Desenvolvedor .NET focado em soluções Microsoft</p>
     </div>
-    <img src="img/eu.jpg" alt="eu" class="foto-com-moldura">
+
+    <img src="img/t3.jpg" alt="Foto de Carlos Felipe" class="foto-com-moldura">
   </main>
+
+  <!-- Nova seção de linguagens/tecnologias -->
+  <section class="skills-section">
+    <h2 class="skills-titulo">Tecnologias & Ferramentas</h2>
+    <div class="container-skills">
+      <div class="skill-item">
+        <p>Javascript</p>
+        <img src="img/javascript.png" alt="Logo Javascript">
+      </div>
+      <div class="skill-item">
+        <p>C#</p>
+        <img src="img/C.png" alt="Logo C#">
+      </div>
+      <div class="skill-item">
+        <p>Java</p>
+        <img src="img/java.png" alt="Logo Java">
+      </div>
+      <div class="skill-item">
+        <p>.NET</p>
+        <img src="img/net.png" alt="Logo .NET">
+      </div>
+      <div class="skill-item">
+        <p>SQL SERVER</p>
+        <img src="img/SQL.png" alt="Logo SQL Server">
+      </div>
+      <div class="skill-item">
+        <p>PostgreSQL</p>
+        <img src="img/postgres.png" alt="Logo PostgreSQL">
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
